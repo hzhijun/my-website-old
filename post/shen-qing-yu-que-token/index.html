@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>申请语雀 Token | hzj</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://hzhijun.github.io/my-website/favicon.ico?v=1693552731899">
+<link rel="stylesheet" href="https://hzhijun.github.io/my-website/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="申请语雀 Auth-Token
+语雀官方文档
+语雀会员用户
+获取 Token 可通过点击语雀的个人头像，并进入 个人设置 页面拿到，如下图：
+
+录入 Auth-Token
+将申请到的语雀 Auth-Token  填写到插件中，如下图位置：
+..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://hzhijun.github.io/my-website">
+        <img src="https://hzhijun.github.io/my-website/images/avatar.png?v=1693552731899" class="site-logo">
+        <h1 class="site-title">hzj</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://hzhijun.github.io/my-website/post/shen-qing-yu-que-token" class="site-nav">
+            申请语雀 Token
+          </a>
+        
+      
+        
+          <a href="https://hzhijun.github.io/my-website/post/gou-mai-ji-huo-ma" class="site-nav">
+            购买激活码
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://hzhijun.github.io/my-website/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">申请语雀 Token</h2>
+            <div class="post-date">2023-08-21</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="申请语雀-auth-token">申请语雀 Auth-Token</h1>
+<p><a href="https://www.yuque.com/yuque/developer/api">语雀官方文档</a></p>
+<h1 id="语雀会员用户">语雀会员用户</h1>
+<p>获取 Token 可通过点击语雀的个人头像，并进入 <a href="https://www.yuque.com/settings/tokens">个人设置</a> 页面拿到，如下图：</p>
+<figure data-type="image" tabindex="1"><img src="https://github.com/hzhijun/my-website/blob/develop/images/assets/%E7%94%B3%E8%AF%B7key.jpg?raw=true" alt="" loading="lazy"></figure>
+<h1 id="录入-auth-token">录入 Auth-Token</h1>
+<p>将申请到的<code>语雀 Auth-Token</code>  填写到插件中，如下图位置：</p>
+<figure data-type="image" tabindex="2"><img src="https://github.com/hzhijun/my-website/blob/develop/images/assets/%E6%8F%92%E4%BB%B6-%E5%BD%95%E5%85%A5token.jpg?raw=true" alt="" loading="lazy"></figure>
+<h3 id="选择知识库">选择知识库</h3>
+<p>在插件中选择你的知识库（请先点击刷新按钮），如下图位置：</p>
+<figure data-type="image" tabindex="3"><img src="https://github.com/hzhijun/my-website/blob/develop/images/assets/%E6%8F%92%E4%BB%B6-%E9%80%89%E6%8B%A9%E7%9F%A5%E8%AF%86%E5%BA%93.jpg?raw=true" alt="" loading="lazy"></figure>
+<p>录入完成后点击保存按钮即可</p>
+
+            </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '49ef39a26300cd5094b1',
+        clientSecret: 'a8c0e78f4523201ef379e5d15e1ae13ae31943ff',
+        repo: 'my-website',
+        owner: 'hzhijun',
+        admin: ['hzhijun'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
